@@ -22,6 +22,7 @@
     <main class="main-catalog">
       <h1 class="visually-hidden">Отели городка Седона</h1>
       <section class="filter">
+        <h2 class="visually-hidden">Фильтр-поиск жилья</h2>
 
         <div class="column-name-title">
           <form action="#" method="get" class="filter-category">
@@ -48,22 +49,20 @@
         <div class="column-price">
           <div class="filter-price">
             <p class="filter-title price">Стоимость в сутки (р):</p>
-
             <div class="filter-price-slider">
               <div class="price-data">
                 <p class="price-from"><label for="price-from">от</label>
-                <input class="min-price" id="price-from" type="number" value="0" min="0" max="5000" pattern="[0-9]*"></p>
+                <input class="min-price" id="price-from" type="number" value="0" min="0" max="5000"></p>
                 <p class="price-to"><label for="price-to">до</label>
-                <input class="max-price" id="price-to" type="number" value="3000" min="0" max="5000" pattern="[0-9]*"></p>
+                <input class="max-price" id="price-to" type="number" value="3000" min="0" max="5000"></p>
               </div>
 
-            <div class="slider">
-
+              <div class="slider">
+                 <p></p>
+              </div>
             </div>
-
           </div>
         </div>
-
       </section>
       <div class="main-form">
         <div class="main-form-founded">
@@ -118,6 +117,7 @@
             </p>
           </section>
         </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer-tags">
