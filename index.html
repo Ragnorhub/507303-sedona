@@ -75,11 +75,48 @@
         <p>-№5-</p>
         <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
       </section>
-      <section>
+      <section class="search">
         <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
         <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</P>
+          <form action="#" method="get" class="search-finder">
+            <h2 class="search-Sedona">Поиск гостиницы в Седоне</h2>
+          <div class="search-data">
+            <p>
+              <label for="checking">Дата заезда:</label>
+              <span>
+                <input type="text" id="checking" class="date-input" value="24 апреля 2017">
+                <label for="checking" class="search-calendar">Дата заезда</label>
+              </span>
+            </p>
+            <p>
+              <label for="checkout">Дата выезда:</label>
+              <span>
+                <input type="text" id="checkout" class="date-input" value="4 июля 2017">
+                <label for="checkout" class="search-calendar">Дата выезда</label>
+              </span>
+            </p>
+
+            <p class="adults">
+              <label for="adults">Взрослые:</label>
+              <span class="adults-number">
+                <a class="adult-reduce" href="#">Less</a>
+                <input class="people-number" id="adults" type="text" pattern="[0-9]*" value="2" min="0">
+                <a class="adult-add" href="#">More</a>
+              </span>
+            </p>
+            <p class="children">
+              <label for="children">Дети:</label>
+              <span class="children-number">
+                <a class="children-reduce" href="#">Less</a>
+                <input class="people-number" id="children" type="text" pattern="[0-9]*" value="0" min="0">
+                <a class="children-add" href="#">More</a>
+              </span>
+            </p>
+
+            <input type="submit" value="Найти">
+          </div>
+        </form>
       </section>
-      <!-- Здесь будет форма -->
     </main>
     <footer class="footer">
       <div class="footer-tags">

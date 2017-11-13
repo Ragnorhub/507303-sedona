@@ -21,7 +21,50 @@
     </header>
     <main class="main-catalog">
       <h1 class="visually-hidden">Отели городка Седона</h1>
-      <!-- Здесь будет форма -->
+      <section class="filter">
+
+        <div class="column-name-title">
+          <form action="#" method="get" class="filter-category">
+            <p class="filter-name">Инфраструктура:</p>
+            <p><input type="checkbox" id="infrastructure-1" name="pool" value="pool" checked>
+               <label for="infrastructure-1">Бассейн</label></p>
+            <p><input type="checkbox" id="infrastructure-2" name="parking" value="parking">
+               <label for="infrastructure-2">Парковка</label></p>
+            <p><input type="checkbox" id="infrastructure-3" name="wifi" value="wifi">
+               <label for="infrastructure-3">Wi-fi</label></p>
+          </form>
+
+          <form action="#" method="get" class="filter-category">
+            <p class="filter-title">Тип жилья:</p>
+            <p><input type="checkbox" id="type-1" name="hotel" value="hotel" checked>
+               <label for="type-1">Гостиница</label></p>
+            <p><input type="checkbox" id="type-2" name="motel" value="motel" checked>
+               <label for="type-2">Мотель</label></p>
+            <p><input type="checkbox" id="type-3" name="apartments" value="apartments" checked>
+               <label for="type-3">Апартаменты</label></p>
+          </form>
+        </div>
+
+        <div class="column-price">
+          <div class="filter-price">
+            <p class="filter-title price">Стоимость в сутки (р):</p>
+
+            <div class="filter-price-slider">
+              <div class="price-data">
+                <p class="price-from"><label for="price-from">от</label>
+                <input class="min-price" id="price-from" type="number" value="0" min="0" max="5000" pattern="[0-9]*"></p>
+                <p class="price-to"><label for="price-to">до</label>
+                <input class="max-price" id="price-to" type="number" value="3000" min="0" max="5000" pattern="[0-9]*"></p>
+              </div>
+
+            <div class="slider">
+
+            </div>
+
+          </div>
+        </div>
+
+      </section>
       <div class="main-form">
         <div class="main-form-founded">
           <p>Найдено: 3</p>
