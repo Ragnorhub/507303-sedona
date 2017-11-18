@@ -23,6 +23,7 @@ a {
 
 .menu-list {
   list-style: none;
+  font-weight: bold;
 }
 
 .menu-list a {
@@ -35,6 +36,10 @@ a {
 
 .menu-list a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.menu-list a:visited {
+  color: #766357;
 }
 
 .main-text {
@@ -84,7 +89,223 @@ a {
   text-align: center;
 }
 
+.search-title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.search-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
 .search-Sedona {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.search-Sedona:hover {
+  background-color: #604e43;
+}
+
+.search-Sedona:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color:#503e33;
+}
+
+.search-data {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.input-checking input,
+.input-checkout input,
+.adults-number input,
+.children-number input {
+  font: inherit;
+  background-color: #f2f2f2;
+  border: 0px #f2f2f2;
+}
+
+.input-checking input:hover,
+.input-checkout input:hover,
+.adults-number input:hover,
+.children-number input:hover {
+  background-color: #ebebeb;
+}
+
+.button-form {
+  font: inherit;
+  font-size: 21px;
   color: #ffffff;
   text-align: center;
+  background-color: #81b3d2;
+  border: 0px #81b3d2;
+  border-radius: 0px;
+  text-transform: uppercase;
+}
+
+.button-form:hover {
+  background-color: #669ec0;
+}
+
+.button-form:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.footer-tags {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.social-twitter img,
+.social-facebook img,
+.social-youtube img{
+  background-color: #81b3d2;
+}
+
+.social-twitter img:hover,
+.social-facebook img:hover,
+.social-youtube img:hover {
+  background-color: #669ec0;
+}
+
+.social-twitter img:active,
+.social-facebook img:active,
+.social-youtube img:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.filter-name,
+.filter-title,
+.filter-title-price {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+}
+
+.filter {
+  background: grey url("../img/sedonaback.jpg") center no-repeat;
+}
+
+.price-data {
+  border: 2px solid white;
+}
+
+.button-form-catalog {
+  font: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0);
+  border: 2px solid white;
+  border-radius: 0px;
+  text-transform: uppercase;
+}
+
+.button-form-catalog:hover {
+  background-color: #669ec0;
+}
+
+.button-form-catalog:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.sorter-list .list-item-sort {
+  color: #000000;
+  border-bottom: none;
+}
+
+.sorter-list span {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.sorter-list span:hover {
+  font-size: 12px;
+  line-height: 18px;
+  color: #81b3d2;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.sorter-list span:active {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  border-bottom: none;
+}
+
+.sorter-list span:visited {
+  font-size: 12px;
+  line-height: 18px;
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+.header-housing {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-align: left;
+}
+
+.header-housing:hover {
+  color: #81b3d2;
+}
+
+.header-housing:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.nameandprice {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  color: #333333;
+}
+
+.button-more {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.button-more:hover {
+  background-color: #669ec0;
+}
+
+.button-more:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.button-book {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #ffffff;
   background-color: #766357;
+}
+
+.button-book:hover {
+  background-color: #604e43;
+}
+
+.button-book:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}

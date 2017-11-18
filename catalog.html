@@ -9,10 +9,10 @@
   </head>
   <body>
     <header class="main-header">
+        <a class="main-header-logo">
+          <img src="img/index-logo.png" width="138" height="70" alt="Логотип Sedona">
+        </a>
         <nav class="header-menu">
-          <a class="main-header-logo">
-            <img src="img/index-logo.png" width="138" height="70" alt="Логотип Sedona">
-          </a>
           <ul class="menu-list">
             <li><a href="#">ИНФОРМАЦИЯ</a></li>
             <li><a href="#">ФОТО И ВИДЕО</a></li>
@@ -22,7 +22,7 @@
         </nav>
     </header>
     <main class="main-catalog">
-      <h1 class="visually-hidden">Отели городка Седона</h1>
+      <h1 class="visually-hidden">Жилье городка Седона</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр-поиск жилья</h2>
 
@@ -50,7 +50,7 @@
 
         <div class="column-price">
           <div class="filter-price">
-            <p class="filter-title price">Стоимость в сутки (р):</p>
+            <p class="filter-title-price">Стоимость в сутки (р):</p>
             <div class="filter-price-slider">
               <div class="price-data">
                 <p class="price-from"><label for="price-from">от</label>
@@ -62,6 +62,7 @@
               <div class="slider">
                  <p></p>
               </div>
+              <input class="button-form-catalog" type="submit" value="Найти">
             </div>
           </div>
         </div>
@@ -71,18 +72,18 @@
           <p>Найдено: 3</p>
         </div>
         <div class="main-form-sorter">
-          <ul class="sorter-list">
-            <li class="list-item-sort">Сортировка</li>
-            <li class="list-item-price">По цене</li>
-            <li class="list-item-type">По типу</li>
-            <li class="list-item-rating">По рейтингу</li>
-          </ul>
+          <div class="sorter-list">
+            <a><span class="list-item-sort">Сортировка</span></a>
+            <a href="#"><span class="list-item-price">По цене</span></a>
+            <a href="#"><span class="list-item-type">По типу</span></a>
+            <a href="#"><span class="list-item-rating">По рейтингу</span></a>
+          </div>
         </div>
         <div class="main-housing">
           <section class="housing-item">
-            <h2 class="Amara-star">AMARA RESORT &amp; SPA</h2>
+            <h2 class="header-housing">AMARA RESORT &amp; SPA</h2>
             <img src="img/amara.jpg" width="135" height="90" alt="Фотография гостиницы AMARA RESORT &amp; SPA">
-            <p>
+            <p class="nameandprice">
               <span class="housing-name">Гостиница</span>
               <span class="housing-price">ОТ 4000 Р.</span>
             </p>
@@ -93,9 +94,9 @@
             </p>
           </section>
           <section class="housing-item">
-            <h2 class="Desert-star">DESERT QUAIL INN</h2>
+            <h2 class="header-housing">DESERT QUAIL INN</h2>
             <img src="img/desert.jpg" width="135" height="90" alt="Фотография мотеля DESERT QUAIL INN">
-            <p>
+            <p class="nameandprice">
               <span class="housing-name">Мотель</span>
               <span class="housing-price">ОТ 3000 Р.</span>
             </p>
@@ -106,9 +107,9 @@
             </p>
           </section>
           <section class="housing-item">
-            <h2 class="Villas-star">VILLAS AT POCO DIABLO</h2>
-            <img src="img/desert.jpg" width="135" height="90" alt="Фотография аппартаментов VILLAS AT POCO DIABLO">
-            <p>
+            <h2 class="header-housing">VILLAS AT POCO DIABLO</h2>
+            <img src="img/villas.jpg" width="135" height="90" alt="Фотография аппартаментов VILLAS AT POCO DIABLO">
+            <p  class="nameandprice">
               <span class="housing-name">Апартаменты</span>
               <span class="housing-price">ОТ 2000 Р.</span>
             </p>

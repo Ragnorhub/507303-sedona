@@ -78,21 +78,21 @@
         <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
       </section>
       <section class="search">
-        <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</P>
+        <h2 class="search-title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+        <p class="search-text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</P>
           <form action="#" method="get" class="search-finder">
             <h2 class="search-Sedona">Поиск гостиницы в Седоне</h2>
           <div class="search-data">
             <p>
               <label for="checking">Дата заезда:</label>
-              <span>
+              <span class="input-checking">
                 <input type="text" id="checking" class="date-input" value="24 апреля 2017">
                 <label for="checking" class="search-calendar">Дата заезда</label>
               </span>
             </p>
-            <p>
+            <p  class="appointment-item">
               <label for="checkout">Дата выезда:</label>
-              <span>
+              <span class="input-checkout">
                 <input type="text" id="checkout" class="date-input" value="4 июля 2017">
                 <label for="checkout" class="search-calendar">Дата выезда</label>
               </span>
@@ -102,7 +102,7 @@
               <label for="adults">Взрослые:</label>
               <span class="adults-number">
                 <a class="adult-reduce" href="#">Less</a>
-                <input class="people-number" id="adults" type="text" pattern="[0-9]*" value="2">
+                <input class="people-number" id="adults" type="text" value="2">
                 <a class="adult-add" href="#">More</a>
               </span>
             </p>
@@ -110,12 +110,12 @@
               <label for="children">Дети:</label>
               <span class="children-number">
                 <a class="children-reduce" href="#">Less</a>
-                <input class="people-number" id="children" type="text" pattern="[0-9]*" value="0">
+                <input class="people-number" id="children" type="text" value="0">
                 <a class="children-add" href="#">More</a>
               </span>
             </p>
 
-            <input type="submit" value="Найти">
+            <input class="button-form" type="submit" value="Найти">
           </div>
         </form>
         <div class="map">
