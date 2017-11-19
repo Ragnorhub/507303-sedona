@@ -38,10 +38,6 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.menu-list a:visited {
-  color: #766357;
-}
-
 .main-text {
   color: #000000;
   text-align: center;
@@ -54,14 +50,17 @@ a {
 .main-house {
   color: #000000;
   text-align: center;
+  background: url("../img/housing.png") center no-repeat;
 }
 .main-food {
   color: #000000;
   text-align: center;
+  background: url("../img/eat.png") center no-repeat;
 }
 .main-souvenir {
   color: #000000;
   text-align: center;
+  background: url("../img/souvenir.png") center no-repeat;
 }
 .main-bridge {
   color: #ffffff;
@@ -182,6 +181,18 @@ a {
 .social-youtube img:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
+}
+
+.svghtmlacademy {
+  fill: #231f20;
+}
+
+.svghtmlacademy:hover {
+  fill: #81b3d2;
+}
+
+.svghtmlacademy:active {
+  fill: #bdbbbc;
 }
 
 .filter-name,
