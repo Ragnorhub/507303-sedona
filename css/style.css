@@ -163,17 +163,15 @@ letter-spacing: 0.5px;
 
 .realhouse-text {
   width: 33.33%;
-  margin-top: 47px;
-  margin-left: 59px;
-  margin-right: 59px;
-  padding-bottom: 20px;
   text-align: center;
   color: white;
 }
 
 .realhouse-sity {
   width: 155px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 47px;
   margin-bottom: 21px;
   text-align: center;
   font-size: 21px;
@@ -188,7 +186,8 @@ letter-spacing: 0.5px;
 
 .realhouse-Sedona {
   max-width: 100%;
-  margin: 0;
+  margin-left: 59px;
+  margin-right: 59px;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -205,41 +204,118 @@ letter-spacing: 0.5px;
   height: 100%;
 }
 
-.main-house {
-  color: #000000;
+.main-offer {
+  display: flex;
+  min-height: 330px;
+  color: #000;
   text-align: center;
-  background: url("../img/housing.png") center no-repeat;
+  background-color: #fff;
 }
-.main-food {
-  color: #000000;
-  text-align: center;
-  background: url("../img/eat.png") center no-repeat;
+
+.main-offer section {
+  width: 33.33%;
 }
-.main-souvenir {
-  color: #000000;
-  text-align: center;
-  background: url("../img/souvenir.png") center no-repeat;
+
+.main-offer h3 {
+  margin-top: 163px;
+  font-size: 21px;
+  line-height: 21px;
 }
-.main-bridge {
+
+.main-offer p {
+  margin-right: 57px;
+  margin-left: 57px;
+  line-height: 1.5;
+}
+
+.offer-house {
+  background: url("../img/housing.png") center 60px no-repeat;
+}
+.offer-food {
+  background: url("../img/eat.png") center 60px no-repeat;
+}
+.offer-souvenir {
+  background: url("../img/souvenir.png") center 60px no-repeat;
+}
+
+.main-realbridge {
+  display: flex;
+  min-height: 256px;
   color: #ffffff;
   text-align: center;
   background-color: #81b3d2;
 }
-.main-area {
-  color: #000000;
+
+.main-bridge {
+  width: 33.33%;
   text-align: center;
-  background-color: #eeeeee;
+  color: white;
 }
-.main-route {
-  color: #000000;
+
+.bridge-devil {
+  width: 151px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 47px;
+  margin-bottom: 21px;
   text-align: center;
-  background-color: #eeeeee;
+  font-size: 21px;
+  line-height: 21px;
 }
-.main-tourist {
-  color: #000000;
+
+.bridge-n2 {
+  display: block;
+  margin-bottom: 19px;
+  font-weight: normal;
+}
+
+.bridge-go {
+  max-width: 100%;
+  margin-left: 49px;
+  margin-right: 49px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.main-secondimage {
+  width: 66.66%;
+  max-height: 256px;
+  background-color: #a5907e;
+}
+
+.main-secondimage img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-pluses {
+  display: flex;
+  min-height: 256px;
+  color: #000;
   text-align: center;
-  background-color: #eeeeee;
+  background-color: #eee;
 }
+
+.main-pluses section {
+  width: 33.33%;
+}
+
+.main-pluses h3 {
+  width: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.main-pluses p {
+  margin-right: 69px;
+  margin-left: 69px;
+  line-height: 1.5;
+}
+
 .search {
   color: #000000;
   background-color: white;
@@ -249,6 +325,7 @@ letter-spacing: 0.5px;
 .search-title {
   font-size: 30px;
   line-height: 36px;
+  min-height: 291px;
 }
 
 .search-text {
