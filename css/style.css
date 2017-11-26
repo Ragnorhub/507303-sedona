@@ -302,7 +302,7 @@ letter-spacing: 0.5px;
 }
 
 .main-pluses h3 {
-  width: 110px;
+  width: 120px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
@@ -317,105 +317,305 @@ letter-spacing: 0.5px;
 }
 
 .search {
-  color: #000000;
-  background-color: white;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  background-color: #fff;
+
+}
+
+.search-hotel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 52px;
 }
 
 .search-title {
+  margin: 0;
+  margin-bottom: 24px;
   font-size: 30px;
-  line-height: 36px;
-  min-height: 291px;
+  line-height: 34px;
+  text-align: center;
+  color: #000;
 }
 
 .search-text {
+  margin: 0;
+  margin-bottom: 47px;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
+  font-weight: normal;
   color: #333333;
 }
 
-.search-Sedona {
+a.search-hotel-button {
+  display: block;
+  width: 568px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-decoration: none;
   font-size: 21px;
-  line-height: 26px;
-  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
   background-color: #766357;
 }
 
-.search-Sedona:hover {
+a.search-hotel-button:hover,
+a.search-hotel-button:focus {
   background-color: #604e43;
+  outline: none;
 }
 
-.search-Sedona:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color:#503e33;
+a.search-hotel-button:active {
+  background-color: #503e33;
 }
 
 .search-data {
-  font-size: 14px;
-  line-height: 26px;
+  position: relative;
+}
+
+.search-menu {
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  display: block;
+  padding: 55px;
+  width: 568px;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  color: #000;
   font-weight: bold;
-  text-align: left;
+  background-color: #fff;
+  box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
 }
 
-.input-checking input,
-.input-checkout input,
-.adults-number input,
-.children-number input {
-  font: inherit;
+.search-menu .input-data {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.input-data input[type="text"] {
+  flex-grow: 1;
+}
+
+.input-data label {
+  width: 112px;
+  letter-spacing: 0.4px;
+}
+
+.search-menu .calender-picture {
+  position: absolute;
+  top: 50%;
+  right: 9px;
+  padding: 0;
+  font-size: 0;
+  background: none;
+  border: none;
+  transform: translateY(-50%);
+}
+
+.search-menu input[type="text"] {
+  box-sizing: border-box;
+  padding: 11px 14px;
+  padding-right: 40px;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
   background-color: #f2f2f2;
-  border: 0px #f2f2f2;
 }
 
-.input-checking input:hover,
-.input-checkout input:hover,
-.adults-number input:hover,
-.children-number input:hover {
+.search-menu input[type="text"]:hover {
   background-color: #ebebeb;
 }
 
-.button-form {
-  font: inherit;
-  font-size: 21px;
-  color: #ffffff;
+.search-menu input[type="text"]:focus {
+  background-color: #fff;
+  outline: none;
+}
+
+.numberofviziters {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  font-size: 0;
+}
+
+.numberofviziters label {
+  font-size: 14px;
+}
+
+.numberofviziters .adults {
+  margin-right: 41px;
+}
+
+.numberofviziters .children {
+  margin-right: 26px;
+  margin-left: 48px;
+}
+
+.numberofviziters input[type="text"] {
+  width: 38px;
+  padding: 11px 5px;
   text-align: center;
+}
+
+.numberofviziters input[type="button"] {
+  height: 38px;
+  width: 38px;
+  vertical-align: top;
+  font-size: 24px;
+}
+
+.calender-picture:hover path,
+.calender-picture:focus path {
+  fill: #000;
+}
+
+.calender-picture:active path {
+  fill: #81b3d2;
+}
+
+.calender-picture:focus,
+.calender-picture:active {
+  outline: none;
+}
+
+.search-menu .buttonviziters {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+  border: none;
+  color: #a9a9a9;
+}
+
+.search-menu .buttonviziters:hover,
+.search-menu .buttonviziters:focus {
+  color: #000;
+  outline: none;
+}
+
+.search-menu .buttonviziters:active {
+  color: #81b3d2;
+}
+
+.search-menu input[type="submit"] {
+  width: 458px;
+  height: 58px;
+  margin-top: 54px;
+  border: none;
   background-color: #81b3d2;
-  border: 0px #81b3d2;
-  border-radius: 0px;
+  color: white;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
-.button-form:hover {
+.search-menu input[type="submit"]:hover,
+.search-menu input[type="submit"]:focus {
   background-color: #669ec0;
+  outline: none;
 }
 
-.button-form:active {
-  color: rgba(255, 255, 255, 0.3);
+.search-menu input[type="submit"]:active {
   background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.footer-tags {
-  font-size: 21px;
-  line-height: 26px;
-  color: #000000;
+iframe {
+  position: absolute;
 }
 
-.social-twitter img,
-.social-facebook img,
-.social-youtube img{
+.footer {
+  display: flex;
+  position: relative;
+  margin-top: 474px;
+  height: 120px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.footersection {
+  display: flex;
+  flex-basis: 33%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social ul {
+  padding: 0;
+  padding-top: 12px;
+  padding-right: 5px;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.footer-social li {
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.footer-social .socialbutton {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
   background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.social-twitter img:hover,
-.social-facebook img:hover,
-.social-youtube img:hover {
+.footer-social .socialbutton:hover,
+.footer-social .socialbutton:focus  {
   background-color: #669ec0;
 }
 
-.social-twitter img:active,
-.social-facebook img:active,
-.social-youtube img:active {
-  color: rgba(255, 255, 255, 0.3);
+.footer-social .socialbutton:active {
   background-color: #5496bd;
+}
+
+.footer-social .social-twitter {
+   background-image: url("../img/twitter.svg");
+}
+
+.footer-social .social-facebook {
+  background-image: url("../img/fb-icon.svg");
+}
+
+.footer-social .social-youtube {
+  background-image: url("../img/youtube.svg");
+}
+
+.visitsedona {
+  font-size: 21px;
+  font-weight: bold;
+  color: #000;
+}
+
+.htmlacademy-referal {
+  color: #000;
+  font-weight: normal;
+  position: relative;
+  padding-right: 124px;
+  text-decoration: none;
+}
+
+.htmlacademy-referal svg {
+  position: absolute;
+  right: 0;
+  top: -25%;
 }
 
 .svghtmlacademy {
