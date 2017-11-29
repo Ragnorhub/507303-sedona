@@ -639,7 +639,20 @@ iframe {
 }
 
 .filter {
-  background: grey url("../img/sedonaback.jpg") center no-repeat;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 27px;
+  padding-bottom: 30px;
+  background-color: #6c7780;
+  background-image: url("../img/sedonaback.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.filter-category {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .price-data {
