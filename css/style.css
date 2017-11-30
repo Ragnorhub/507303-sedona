@@ -630,14 +630,6 @@ iframe {
   fill: #bdbbbc;
 }
 
-.filter-name,
-.filter-title,
-.filter-title-price {
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 21px;
-}
-
 .filter {
   padding-left: 6%;
   padding-right: 6%;
@@ -821,4 +813,10 @@ iframe {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+}
+
+.filter-category input[type="submit"]:hover,
+.filter-category input[type="submit"]:focus {
+  background-color: #fff;
+  color: #000;
 }
