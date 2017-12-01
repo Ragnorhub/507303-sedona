@@ -867,7 +867,6 @@ iframe {
 .column2 a {
   font-size: 12px;
 	color: rgb(202,202,202);
-  text-decoration: none;
 	border-bottom: 1px dotted #81b3d2;
 }
 
@@ -939,6 +938,151 @@ iframe {
   padding-left: 6%;
   padding-right: 6%;
   border-bottom: 1px solid #e5e5e5;
+  color: black;
+}
+
+.housing-photo {
+  width: 135px;
+  padding-top: 30px;
+}
+
+.housing-description {
+  flex-grow: 1;
+  padding-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 25px;
+  padding-bottom: 31px;
+}
+
+.header-housing {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 7px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: black;
+}
+
+.header-housing a {
+	color: #000;
+  text-decoration: none;
+}
+
+.header-housing a:hover,
+.header-housing a:focus {
+	color: #81b3d2;
+  outline: none;
+}
+
+.header-housing a:active {
+	color: #000;
+	opacity: 0.3;
+}
+
+.housing-name,
+.housing-price {
+  margin: 0;
+  line-height: 21px;
+  font-weight: normal;
+  margin-bottom: 14px;
+}
+
+.housing-name {
+  min-width: 110px;
+  max-width: 70%;
+}
+
+.housing-price {
+  margin-left: 6px;
+}
+
+.housing-description .buttons {
+  width: 100%;
+  margin: 0;
+}
+
+.housing-description .button {
+  padding: 4px 17px 5px 16px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.housing-description .button-more {
+  margin-right: 2px;
+  background-color: #81b3d2;
+  color: white;
+}
+
+.housing-description .button-more:hover,
+.housing-description .button-more:focus {
+  background-color: #669ec0;
+  outline: none;
+}
+
+.housing-description .button-more:active {
+   background-color: #5496bd;
+   color: rgba(255, 255, 255, 0.3);
+}
+
+.housing-description .button-book {
+  color: white;
+  background-color: #766357;
+}
+
+.housing-description .button-book:hover,
+.housing-description .button-book:focus {
+  background-color: #604e43;
+  outline: none;
+}
+
+.housing-description .button-book:active {
+  background-color: #503e33;
+}
+
+.housing-rating {
+  width: 135px;
+  flex-shrink: 0;
+  padding-top: 25px;
+  line-height: 21px;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+}
+
+.housing-rating .rating-star {
+  display: inline-block;
+  vertical-align: baseline;
+  height: 17px;
+  width: 18px;
+  font-size: 0;
+  background-image: url("../img/star.svg");
+  background-repeat: space;
+  margin-bottom: 47px;
+}
+
+.housing-rating .two-star {
+  width: 41px;
+}
+
+.housing-rating .three-star {
+  width: 65px;
+}
+
+.housing-rating .four-star {
+  width: 89px;
+}
+
+.housing-rating .rating-number {
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 3px 13px 3px 15px;
+  color: #666666;
+  background-color: #f2f2f2;
 }
 
 .footer-catalog {
