@@ -727,7 +727,7 @@ iframe {
 }
 
 .field-praicing legend {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .field-praicing label {
@@ -868,16 +868,17 @@ iframe {
   font-size: 12px;
 	color: rgb(202,202,202);
 	border-bottom: 1px dotted #81b3d2;
+  text-decoration: none;
 }
 
-.column2 a:active {
+.column2 .column2-list-price {
   color: #81b3d2;
 	border: none;
 }
 
 .column2 a[href]:hover,
-.column2 a[href]:focus{
-	color: #81b3d2;
+.column2 a[href]:focus {
+  color: #81b3d2;
 	border-bottom: 1px dotted #81b3d2;
 	outline: none;
 }
@@ -886,6 +887,23 @@ iframe {
 	color: #000;
 	border: none;
 }
+
+/*.column2 a:active {
+  color: #81b3d2;
+	border: none;
+}
+
+.column2 a[href]:hover,
+.column2 a[href]:focus {
+	color: #81b3d2;
+	border-bottom: 1px dotted #81b3d2;
+	outline: none;
+}
+
+.column2 a[href]:active{
+	color: #000;
+	border: none;
+}*/
 
 .column3 {
   width: 135px;
