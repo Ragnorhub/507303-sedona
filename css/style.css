@@ -604,15 +604,25 @@ a.search-hotel-button:active {
   outline: none;
 }
 
-.socialbutton:hover,
-.socialbutton:focus {
+.socialbutton:hover {
   background-color: #669ec0;
 }
 
-.socialbutton:active,
-.socialbutton:active svg {
+.socialbutton .social-web:focus {
+height: 48px;
+width: 46px;
+display: block;
+background-color: #669ec0;
+}
+
+.socialbutton:active {
   background-color: #5496bd;
-  fill: rgba(255, 255, 255, 0,3);
+}
+
+.socialbutton:active .fb,
+.socialbutton:active .tw,
+.socialbutton:active .yt {
+  fill: #aba8b4;
 }
 
 .visitsedona {
@@ -830,6 +840,7 @@ a.search-hotel-button:active {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .filter-category input[type="submit"]:hover,
