@@ -17,7 +17,7 @@ body {
   max-width: 1200px;
   background-color: white;
   margin: 0 auto;
-  box-shadow: 0px 5px 15px 1px rgba(0, 1, 1, 0.2);
+  box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
 .visually-hidden {
@@ -544,6 +544,14 @@ a.search-hotel-button:active {
 
 .map iframe {
   position: absolute;
+}
+
+.map {
+  background-color: grey;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .footer {
