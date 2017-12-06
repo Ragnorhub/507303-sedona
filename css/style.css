@@ -547,17 +547,21 @@ a.search-hotel-button:active {
 }
 
 .map {
+  position: relative;
   background-color: grey;
-  background-image: url("../img/map.jpg");
+  background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  width: 100%;
+  max-width: 1200px;
+  height:585px;
 }
 
 .footer {
   display: flex;
   position: relative;
-  margin-top: 474px;
+  margin-top: -120px;
   height: 120px;
   width: 100%;
   background-color: rgba(255,255,255,0.9);
@@ -732,6 +736,11 @@ background-color: #669ec0;
   background-image: url("../img/checkbox-off.svg");
   left: 0;
   top: 0;
+}
+
+.filter-category input[type="checkbox"]:focus + .checkbox-picture,
+.filter-category input[type="checkbox"]:active + .checkbox-picture {
+  outline: 2px solid #81b3d2;
 }
 
 .field-infrastructure {
