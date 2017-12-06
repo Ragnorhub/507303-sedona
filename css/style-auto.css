@@ -17,8 +17,8 @@ body {
   max-width: 1200px;
   background-color: white;
   margin: 0 auto;
-  -webkit-box-shadow: 0px 5px 15px 1px rgba(0, 1, 1, 0.2);
-          box-shadow: 0px 5px 15px 1px rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
+          box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
 }
 
 .visually-hidden {
@@ -588,6 +588,21 @@ a.search-hotel-button:active {
 
 .map iframe {
   position: absolute;
+  height: 585px;
+  width: 100%;
+  border: 0;
+}
+
+.map {
+  position: relative;
+  background-color: grey;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 1200px;
+  height:585px;
 }
 
 .footer {
@@ -595,7 +610,7 @@ a.search-hotel-button:active {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin-top: 474px;
+  margin-top: -120px;
   height: 120px;
   width: 100%;
   background-color: rgba(255,255,255,0.9);
@@ -785,6 +800,10 @@ background-color: #669ec0;
   top: 0;
 }
 
+.filter-category input[type="checkbox"]:focus + .checkbox-picture {
+  outline: 2px solid #81b3d2;
+}
+
 .field-infrastructure {
   width: 24%;
   min-width: 238px;
@@ -882,6 +901,8 @@ background-color: #669ec0;
           box-shadow: 0 2px 2px rgba(171, 171, 171, 0.3);
 }
 
+.field-praicing .range-runner:focus,
+.field-praicing .range-runner:active,
 .field-praicing .range-runner:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
