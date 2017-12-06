@@ -738,8 +738,7 @@ background-color: #669ec0;
   top: 0;
 }
 
-.filter-category input[type="checkbox"]:focus + .checkbox-picture,
-.filter-category input[type="checkbox"]:active + .checkbox-picture {
+.filter-category input[type="checkbox"]:focus + .checkbox-picture {
   outline: 2px solid #81b3d2;
 }
 
@@ -835,6 +834,8 @@ background-color: #669ec0;
   box-shadow: 0 2px 2px rgba(171, 171, 171, 0.3);
 }
 
+.field-praicing .range-runner:focus,
+.field-praicing .range-runner:active,
 .field-praicing .range-runner:hover {
   transform: scale(1.1);
 }
